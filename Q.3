@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+
+Struct Books {
+
+    Char title[100];
+
+    Char author[100];
+
+    Char subject[100];
+
+    int book_id;
+
+};
+
+
+
+int main() {
+
+    Struct Books library[5]; 
+
+    int i;
+
+
+
+
+
+    Printf(“Enter details of 5 books:\n”);
+
+    For (i = 0; i< 5; i++) {
+
+        Printf(“Book %d\n”, i+ 1);
+
+        Printf(“Title: “);
+
+        Scanf(“%s”, library[i].title);
+
+        Printf(“Author: “);
+
+        Scanf(“%s”, library[i].author);
+
+        Printf(“Subject: “);
+
+        Scanf(“%s”, library[i].subject);
+
+        Printf(“Book ID: “);
+
+        Scanf(“%d”, &library[i].book_id);
+
+    }
+
+
+
+
+
+    Printf(“\nDetails of the books entered by the user:\n”);
+
+    For (i = 0; i < 5; i++) {
+
+        Printf(“Book %d\n”, i + 1);
+
+        Printf(“Title: %s\n”, library[i].title);
+
+        Printf(“Author: %s\n”, library[i].author);
+
+        Printf(“Subject: %s\n”, library[i].subject);
+
+        Printf(“Book ID: %d\n”, library[i].book_id);
+
+    }
+
+
+
+    Return 0;
+
+}
